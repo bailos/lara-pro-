@@ -9,8 +9,8 @@
          </div>
      </div>
     <div class="card-header py-3">
-      <h6 class="m-0 font-weight-bold text-primary float-left">Post Lists</h6>
-      <a href="{{route('post.create')}}" class="btn btn-primary btn-sm float-right" data-toggle="tooltip" data-placement="bottom" title="Add User"><i class="fas fa-plus"></i> Add Post</a>
+      <h6 class="m-0 font-weight-bold text-primary float-left">Listes des postes</h6>
+      <a href="{{route('post.create')}}" class="btn btn-primary btn-sm float-right" data-toggle="tooltip" data-placement="bottom" title="Add User"><i class="fas fa-plus"></i> Ajouter une poste</a>
     </div>
     <div class="card-body">
       <div class="table-responsive">
@@ -19,10 +19,10 @@
           <thead>
             <tr>
               <th>S.N.</th>
-              <th>Title</th>
-              <th>Category</th>
+              <th>Titre</th>
+              <th>Categorie</th>
               <th>Tag</th>
-              <th>Author</th>
+              <th>Auteur</th>
               <th>Photo</th>
               <th>Status</th>
               <th>Action</th>
@@ -31,10 +31,10 @@
           <tfoot>
             <tr>
               <th>S.N.</th>
-              <th>Title</th>
-              <th>Category</th>
+              <th>Titre</th>
+              <th>Categorie</th>
               <th>Tag</th>
-              <th>Author</th>
+              <th>Auteur</th>
               <th>Photo</th>
               <th>Status</th>
               <th>Action</th>
@@ -88,7 +88,7 @@
         </table>
         <span style="float:right">{{$posts->links()}}</span>
         @else
-          <h6 class="text-center">No posts found!!! Please create Post</h6>
+          <h6 class="text-center">Aucun poste trouver!!! veillez créer un poste</h6>
         @endif
       </div>
     </div>

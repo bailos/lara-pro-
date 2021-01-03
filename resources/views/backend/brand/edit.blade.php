@@ -3,7 +3,7 @@
 @section('main-content')
 
 <div class="card">
-    <h5 class="card-header">Edit Brand</h5>
+    <h5 class="card-header">Edité une marque</h5>
     <div class="card-body">
       <form method="post" action="{{route('brand.update',$brand->id)}}">
         @csrf 
@@ -26,7 +26,7 @@
           @enderror
         </div>
         <div class="form-group mb-3">
-           <button class="btn btn-success" type="submit">Update</button>
+           <button class="btn btn-success" type="submit">Mis à jour</button>
         </div>
       </form>
     </div>

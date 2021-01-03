@@ -9,7 +9,7 @@
          </div>
      </div>
     <div class="card-header py-3">
-      <h6 class="m-0 font-weight-bold text-primary float-left">Comment Lists</h6>
+      <h6 class="m-0 font-weight-bold text-primary float-left">List des commentaires</h6>
     </div>
     <div class="card-body">
       <div class="table-responsive">
@@ -18,8 +18,8 @@
           <thead>
             <tr>
               <th>S.N.</th>
-              <th>Author</th>
-              <th>Post Title</th>
+              <th>Auteur</th>
+              <th>Tire du poste</th>
               <th>Message</th>
               <th>Date</th>
               <th>Status</th>
@@ -29,8 +29,8 @@
           <tfoot>
             <tr>
               <th>S.N.</th>
-              <th>Author</th>
-              <th>Post Title</th>
+              <th>Auteur</th>
+              <th>Tire du poste</th>
               <th>Message</th>
               <th>Date</th>
               <th>Status</th>
@@ -70,7 +70,7 @@
         </table>
         <span style="float:right">{{$comments->links()}}</span>
         @else
-          <h6 class="text-center">No post comments found!!!</h6>
+          <h6 class="text-center">Aucun commentaire trouver!!!</h6>
         @endif
       </div>
     </div>

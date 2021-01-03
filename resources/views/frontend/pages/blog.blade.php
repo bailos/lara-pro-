@@ -10,7 +10,7 @@
                 <div class="col-12">
                     <div class="bread-inner">
                         <ul class="bread-list">
-                            <li><a href="{{route('home')}}">Home<i class="ti-arrow-right"></i></a></li>
+                            <li><a href="{{route('home')}}">Accuiel<i class="ti-arrow-right"></i></a></li>
                             <li class="active"><a href="javascript:void(0);">Blog Grid Sidebar</a></li>
                         </ul>
                     </div>
@@ -50,7 +50,7 @@
                                         </p>
                                         <a href="{{route('blog.detail',$post->slug)}}" class="title">{{$post->title}}</a>
                                         <p>{!! html_entity_decode($post->summary) !!}</p>
-                                        <a href="{{route('blog.detail',$post->slug)}}" class="more-btn">Continue Reading</a>
+                                        <a href="{{route('blog.detail',$post->slug)}}" class="more-btn">Continuer la lecture</a>
                                     </div>
                                 </div>
                                 <!-- End Single Blog  -->
@@ -97,7 +97,7 @@
                         <!--/ End Single Widget -->
                         <!-- Single Widget -->
                         <div class="single-widget recent-post">
-                            <h3 class="title">Recent post</h3>
+                            <h3 class="title">Nouveau Post</h3>
                             @foreach($recent_posts as $post)
                                 <!-- Single Post -->
                                 <div class="single-post">
@@ -131,7 +131,7 @@
                         <!--/ End Single Widget -->
                         <!-- Single Widget -->
                         <div class="single-widget side-tags">
-                            <h3 class="title">Tags</h3>
+                            <h3 class="title">Mots clés</h3>
                             <ul class="tag">
                                 @if(!empty($_GET['tag']))
                                     @php 
@@ -155,11 +155,11 @@
                         <div class="single-widget newsletter">
                             <h3 class="title">Newslatter</h3>
                             <div class="letter-inner">
-                                <h4>Subscribe & get news <br> latest updates.</h4>
+                                <h4>Souscrire  & obtenir les news <br> des derniers mises à jour.</h4>
                                 <form method="POST" action="{{route('subscribe')}}" class="form-inner">
                                     @csrf
                                     <input type="email" name="email" placeholder="Enter your email">
-                                    <button type="submit" class="btn " style="width: 100%">Submit</button>
+                                    <button type="submit" class="btn " style="width: 100%">Soumettre</button>
                                 </form>
                             </div>
                         </div>

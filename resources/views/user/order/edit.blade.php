@@ -4,7 +4,7 @@
 
 @section('main-content')
 <div class="card">
-  <h5 class="card-header">Order Edit</h5>
+  <h5 class="card-header">Editer la commande</h5>
   <div class="card-body">
     <form action="{{route('order.update',$order->id)}}" method="POST">
       @csrf
@@ -19,7 +19,7 @@
           <option value="cancel" {{(($order->status=='cancel')? 'selected' : '')}}>Cancel</option>
         </select>
       </div>
-      <button type="submit" class="btn btn-primary">Update</button>
+      <button type="submit" class="btn btn-primary">Mise à jour</button>
     </form>
   </div>
 </div>

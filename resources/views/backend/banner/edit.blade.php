@@ -3,7 +3,7 @@
 @section('main-content')
 
 <div class="card">
-    <h5 class="card-header">Edit Banner</h5>
+    <h5 class="card-header">Edité bordeau</h5>
     <div class="card-body">
       <form method="post" action="{{route('banner.update',$banner->id)}}">
         @csrf 
@@ -29,7 +29,7 @@
         <div class="input-group">
             <span class="input-group-btn">
                 <a id="lfm" data-input="thumbnail" data-preview="holder" class="btn btn-primary">
-                <i class="fa fa-picture-o"></i> Choose
+                <i class="fa fa-picture-o"></i> Choisir
                 </a>
             </span>
           <input id="thumbnail" class="form-control" type="text" name="photo" value="{{$banner->photo}}">
@@ -51,7 +51,7 @@
           @enderror
         </div>
         <div class="form-group mb-3">
-           <button class="btn btn-success" type="submit">Update</button>
+           <button class="btn btn-success" type="submit">Mise à jour</button>
         </div>
       </form>
     </div>

@@ -3,7 +3,7 @@
 @section('main-content')
 
 <div class="card">
-    <h5 class="card-header">Add Post</h5>
+    <h5 class="card-header">Ajouter un poste</h5>
     <div class="card-body">
       <form method="post" action="{{route('post.store')}}">
         {{csrf_field()}}
@@ -24,7 +24,7 @@
         </div>
 
         <div class="form-group">
-          <label for="summary" class="col-form-label">Summary <span class="text-danger">*</span></label>
+          <label for="summary" class="col-form-label">Resumé <span class="text-danger">*</span></label>
           <textarea class="form-control" id="summary" name="summary">{{old('summary')}}</textarea>
           @error('summary')
           <span class="text-danger">{{$message}}</span>
@@ -40,7 +40,7 @@
         </div>
 
         <div class="form-group">
-          <label for="post_cat_id">Category <span class="text-danger">*</span></label>
+          <label for="post_cat_id">Categorie <span class="text-danger">*</span></label>
           <select name="post_cat_id" class="form-control">
               <option value="">--Select any category--</option>
               @foreach($categories as $key=>$data)
@@ -59,7 +59,7 @@
           </select>
         </div>
         <div class="form-group">
-          <label for="added_by">Author</label>
+          <label for="added_by">Auteur</label>
           <select name="added_by" class="form-control">
               <option value="">--Select any one--</option>
               @foreach($users as $key=>$data)
@@ -72,7 +72,7 @@
           <div class="input-group">
               <span class="input-group-btn">
                   <a id="lfm" data-input="thumbnail" data-preview="holder" class="btn btn-primary">
-                  <i class="fa fa-picture-o"></i> Choose
+                  <i class="fa fa-picture-o"></i> Choisir
                   </a>
               </span>
           <input id="thumbnail" class="form-control" type="text" name="photo" value="{{old('photo')}}">
@@ -95,7 +95,7 @@
         </div>
         <div class="form-group mb-3">
           <button type="reset" class="btn btn-warning">Reset</button>
-           <button class="btn btn-success" type="submit">Submit</button>
+           <button class="btn btn-success" type="submit">Soumettre</button>
         </div>
       </form>
     </div>

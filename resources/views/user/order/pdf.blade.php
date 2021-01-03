@@ -107,13 +107,13 @@
   </div>
   <section class="order_details pt-3">
     <div class="table-header">
-      <h5>Order Details</h5>
+      <h5>Details de commande</h5>
     </div>
     <table class="table table-bordered table-stripe">
       <thead>
         <tr>
-          <th scope="col" class="col-6">Product</th>
-          <th scope="col" class="col-3">Quantity</th>
+          <th scope="col" class="col-6">Produit</th>
+          <th scope="col" class="col-3">Quantité</th>
           <th scope="col" class="col-3">Total</th>
         </tr>
       </thead>
@@ -136,7 +136,7 @@
       <tfoot>
         <tr>
           <th scope="col" class="empty"></th>
-          <th scope="col" class="text-right">Subtotal:</th>
+          <th scope="col" class="text-right">Sous total:</th>
           <th scope="col"> <span>${{number_format($order->sub_total,2)}}</span></th>
         </tr>
       {{-- @if(!empty($order->coupon))
@@ -148,7 +148,7 @@
       @endif --}}
         <tr>
           <th scope="col" class="empty"></th>
-          <th scope="col" class="text-right ">Shipping:</th>
+          <th scope="col" class="text-right ">Expedition:</th>
           <th><span>${{number_format($order->delivery_charge,2)}}</span></th>
         </tr>
         <tr>
@@ -164,15 +164,15 @@
     </table>
   </section>
   <div class="thanks mt-3">
-    <h4>Thank you for your business !!</h4>
+    <h4>Merci pour ton business !!</h4>
   </div>
   <div class="authority float-right mt-5">
     <p>-----------------------------------</p>
-    <h5>Authority Signature:</h5>
+    <h5>Signature de l'autorité:</h5>
   </div>
   <div class="clearfix"></div>
 @else
-  <h5 class="text-danger">Invalid</h5>
+  <h5 class="text-danger">Invalide</h5>
 @endif
 </body>
 </html>

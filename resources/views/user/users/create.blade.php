@@ -3,12 +3,12 @@
 @section('main-content')
 
 <div class="card">
-    <h5 class="card-header">Add User</h5>
+    <h5 class="card-header">Ajouter un utilisateur</h5>
     <div class="card-body">
       <form method="post" action="{{route('users.store')}}">
         {{csrf_field()}}
         <div class="form-group">
-          <label for="inputTitle" class="col-form-label">Name</label>
+          <label for="inputTitle" class="col-form-label">Nom</label>
         <input id="inputTitle" type="text" name="name" placeholder="Enter name"  value="{{old('name')}}" class="form-control">
         @error('name')
         <span class="text-danger">{{$message}}</span>
@@ -24,7 +24,7 @@
         </div>
 
         <div class="form-group">
-            <label for="inputPassword" class="col-form-label">Password</label>
+            <label for="inputPassword" class="col-form-label">Mot de passe</label>
           <input id="inputPassword" type="password" name="password" placeholder="Enter password"  value="{{old('password')}}" class="form-control">
           @error('password')
           <span class="text-danger">{{$message}}</span>
@@ -36,7 +36,7 @@
         <div class="input-group">
             <span class="input-group-btn">
                 <a id="lfm" data-input="thumbnail" data-preview="holder" class="btn btn-primary">
-                <i class="fa fa-picture-o"></i> Choose
+                <i class="fa fa-picture-o"></i> Choisir
                 </a>
             </span>
             <input id="thumbnail" class="form-control" type="text" name="photo" value="{{old('photo')}}">
@@ -73,7 +73,7 @@
           </div>
         <div class="form-group mb-3">
           <button type="reset" class="btn btn-warning">Reset</button>
-           <button class="btn btn-success" type="submit">Submit</button>
+           <button class="btn btn-success" type="submit">Soumettre</button>
         </div>
       </form>
     </div>

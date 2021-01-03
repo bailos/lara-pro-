@@ -24,8 +24,8 @@
 					<div class="col-12">
 						<div class="bread-inner">
 							<ul class="bread-list">
-								<li><a href="{{route('home')}}">Home<i class="ti-arrow-right"></i></a></li>
-								<li class="active"><a href="">Shop Details</a></li>
+								<li><a href="{{route('home')}}">Acceuil<i class="ti-arrow-right"></i></a></li>
+								<li class="active"><a href="">details de la boutique</a></li>
 							</ul>
 						</div>
 					</div>
@@ -102,7 +102,7 @@
 											<!-- Size -->
 											@if($product_detail->size)
 												<div class="size mt-4">
-													<h4>Size</h4>
+													<h4>taille</h4>
 													<ul>
 														@php 
 															$sizes=explode(',',$product_detail->size);
@@ -120,7 +120,7 @@
 												<form action="{{route('single-add-to-cart')}}" method="POST">
 													@csrf 
 													<div class="quantity">
-														<h6>Quantity :</h6>
+														<h6>Quantité :</h6>
 														<!-- Input Order -->
 														<div class="input-group">
 															<div class="button minus">
@@ -139,12 +139,12 @@
 													<!--/ End Input Order -->
 													</div>
 													<div class="add-to-cart mt-4">
-														<button type="submit" class="btn">Add to cart</button>
+														<button type="submit" class="btn">Ajouter au panier</button>
 														<a href="{{route('add-to-wishlist',$product_detail->slug)}}" class="btn min"><i class="ti-heart"></i></a>
 													</div>
 												</form>
 
-												<p class="cat">Category :<a href="{{route('product-cat',$product_detail->cat_info['slug'])}}">{{$product_detail->cat_info['title']}}</a></p>
+												<p class="cat">Categorie :<a href="{{route('product-cat',$product_detail->cat_info['slug'])}}">{{$product_detail->cat_info['title']}}</a></p>
 												@if($product_detail->sub_cat_info)
 												<p class="cat mt-1">Sub Category :<a href="{{route('product-sub-cat',[$product_detail->cat_info['slug'],$product_detail->sub_cat_info['slug']])}}">{{$product_detail->sub_cat_info['title']}}</a></p>
 												@endif
@@ -188,8 +188,8 @@
 																<!-- Review -->
 																<div class="comment-review">
 																	<div class="add-review">
-																		<h5>Add A Review</h5>
-																		<p>Your email address will not be published. Required fields are marked</p>
+																		<h5>Ajouter un commentaire</h5>
+																		<p>Votre adresse electronique ne sera pas publiée.Les champs obligatoires sont marqués</p>
 																	</div>
 																	<h4>Your Rating <span class="text-danger">*</span></h4>
 																	<div class="review-inner">
@@ -221,20 +221,20 @@
                                                                         </div>
 																		<div class="col-lg-12 col-12">
 																			<div class="form-group">
-																				<label>Write a review</label>
+																				<label>Rediger une critique</label>
 																				<textarea name="review" rows="6" placeholder="" ></textarea>
 																			</div>
 																		</div>
 																		<div class="col-lg-12 col-12">
 																			<div class="form-group button5">	
-																				<button type="submit" class="btn">Submit</button>
+																				<button type="submit" class="btn">Soumetrre</button>
 																			</div>
 																		</div>
 																	</div>
 																</form>
 																@else 
 																<p class="text-center p-5">
-																	You need to <a href="{{route('login.form')}}" style="color:rgb(54, 54, 204)">Login</a> OR <a style="color:blue" href="{{route('register.form')}}">Register</a>
+																	Vous avez besoin de vous <a href="{{route('login.form')}}" style="color:rgb(54, 54, 204)">connecter</a> Ou <a style="color:blue" href="{{route('register.form')}}">enregister</a>
 
 																</p>
 																<!--/ End Form -->
@@ -456,12 +456,12 @@
                                 <!--/ End Input Order -->
                             </div>
                             <div class="add-to-cart">
-                                <a href="#" class="btn">Add to cart</a>
+                                <a href="#" class="btn">Ajouter au panier</a>
                                 <a href="#" class="btn min"><i class="ti-heart"></i></a>
                                 <a href="#" class="btn min"><i class="fa fa-compress"></i></a>
                             </div>
                             <div class="default-social">
-                                <h4 class="share-now">Share:</h4>
+                                <h4 class="share-now">partager:</h4>
                                 <ul>
                                     <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
                                     <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>

@@ -9,7 +9,7 @@
          </div>
      </div>
     <div class="card-header py-3">
-      <h6 class="m-0 font-weight-bold text-primary float-left">Post Category Lists</h6>
+      <h6 class="m-0 font-weight-bold text-primary float-left">Categorie de poste</h6>
       <a href="{{route('post-category.create')}}" class="btn btn-primary btn-sm float-right" data-toggle="tooltip" data-placement="bottom" title="Add User"><i class="fas fa-plus"></i> Add Post Category</a>
     </div>
     <div class="card-body">
@@ -19,7 +19,7 @@
           <thead>
             <tr>
               <th>S.N.</th>
-              <th>Title</th>
+              <th>Titre</th>
               <th>Slug</th>
               <th>Status</th>
               <th>Action</th>
@@ -28,7 +28,7 @@
           <tfoot>
             <tr>
               <th>S.N.</th>
-              <th>Title</th>
+              <th>Titre</th>
               <th>Slug</th>
               <th>Status</th>
               <th>Action</th>
@@ -81,7 +81,7 @@
         </table>
         <span style="float:right">{{$postCategories->links()}}</span>
         @else
-          <h6 class="text-center">No Post Category found!!! Please create post category</h6>
+          <h6 class="text-center">Aucune categorie de poste trouver!!! veillez créer une categorie de poste</h6>
         @endif
       </div>
     </div>

@@ -3,7 +3,7 @@
 @section('main-content')
 
 <div class="card">
-    <h5 class="card-header">Add Brand</h5>
+    <h5 class="card-header">Ajouter marque</h5>
     <div class="card-body">
       <form method="post" action="{{route('brand.store')}}">
         {{csrf_field()}}
@@ -27,7 +27,7 @@
         </div>
         <div class="form-group mb-3">
           <button type="reset" class="btn btn-warning">Reset</button>
-           <button class="btn btn-success" type="submit">Submit</button>
+           <button class="btn btn-success" type="submit">Soumettre</button>
         </div>
       </form>
     </div>

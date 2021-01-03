@@ -11,8 +11,8 @@
 				<div class="col-12">
 					<div class="bread-inner">
 						<ul class="bread-list">
-							<li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
-							<li class="active"><a href="blog-single.html">About Us</a></li>
+							<li><a href="index1.html">Accueil<i class="ti-arrow-right"></i></a></li>
+							<li class="active"><a href="blog-single.html">A propos</a></li>
 						</ul>
 					</div>
 				</div>
@@ -30,11 +30,11 @@
 							@php
 								$settings=DB::table('settings')->get();
 							@endphp
-							<h3>Welcome To <span>Eshop</span></h3>
+							<h3>Bienvenue à <span>KOBADA</span></h3>
 							<p>@foreach($settings as $data) {{$data->description}} @endforeach</p>
 							<div class="button">
-								<a href="{{route('blog')}}" class="btn">Our Blog</a>
-								<a href="{{route('contact')}}" class="btn primary">Contact Us</a>
+								<a href="{{route('blog')}}" class="btn">Notre Blog</a>
+								<a href="{{route('contact')}}" class="btn primary">Nous contatcter</a>
 							</div>
 						</div>
 					</div>
@@ -57,7 +57,7 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="section-title">
-						<h2>Our Expert Team</h2>
+						<h2>Notre Equipe</h2>
 						<p>Business consulting excepteur sint occaecat cupidatat consulting non proident, sunt in culpa qui officia deserunt laborum market. </p>
 					</div>
 				</div>
@@ -189,8 +189,8 @@
 					<!-- Start Single Service -->
 					<div class="single-service">
 						<i class="ti-rocket"></i>
-						<h4>Free shiping</h4>
-						<p>Orders over $100</p>
+						<h4>Livraison Gratuite</h4>
+						<p>A partir d'une commande de plus de 100 000</p>
 					</div>
 					<!-- End Single Service -->
 				</div>
@@ -198,8 +198,8 @@
 					<!-- Start Single Service -->
 					<div class="single-service">
 						<i class="ti-reload"></i>
-						<h4>Free Return</h4>
-						<p>Within 30 days returns</p>
+						<h4>Remboursement gratuit</h4>
+						<p>en 30 jours</p>
 					</div>
 					<!-- End Single Service -->
 				</div>
@@ -207,8 +207,8 @@
 					<!-- Start Single Service -->
 					<div class="single-service">
 						<i class="ti-lock"></i>
-						<h4>Sucure Payment</h4>
-						<p>100% secure payment</p>
+						<h4>Payement sécurisé</h4>
+						<p>100% sécurisé</p>
 					</div>
 					<!-- End Single Service -->
 				</div>
@@ -216,8 +216,8 @@
 					<!-- Start Single Service -->
 					<div class="single-service">
 						<i class="ti-tag"></i>
-						<h4>Best Peice</h4>
-						<p>Guaranteed price</p>
+						<h4>Meilleur prix</h4>
+						<p>Prix Garrantie</p>
 					</div>
 					<!-- End Single Service -->
 				</div>

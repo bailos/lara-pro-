@@ -182,7 +182,7 @@ Version:1.0
 	font-weight: 500;
 	font-size:14px;
 	color: #fff;
-	background: #333;
+	background: rgb(51, 51, 51);
 	display: inline-block;
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
@@ -248,7 +248,7 @@ Version:1.0
 }
 .header.v3 .navbar-expand-lg .navbar-collapse{
 	display:block !important;
-	background:#333;
+	background:rgb(45, 182, 17);
 }
 .header .nav li a i {
 	margin-left: 6px;
@@ -286,7 +286,7 @@ Version:1.0
 }
 .header .nav li .dropdown li a {
 	padding: 8px 15px;
-	color: #666;
+	color: rgb(102, 102, 102);
 	display: block;
 	font-weight: 400;
 	text-transform: capitalize;
@@ -416,7 +416,7 @@ Version:1.0
 	border:none;
 }
 .header.shop .list-main li a{
-	color:#333;
+	color:rgb(12, 141, 50);
 }
 .header.shop .list-main li a:hover{
 	color:#F7941D;
@@ -533,7 +533,7 @@ Version:1.0
 	border: 1px solid #ededed;
 }
 .header .shopping-list li .remove:hover{
-	background:#222;
+	background:rgb(19, 167, 6);
 	color:#fff !important;
 	border-color:transparent;
 }
@@ -587,7 +587,7 @@ Version:1.0
 	font-size:14px;
 }
 .header .shopping-item .bottom .btn {
-	background: #222;
+	background: rgb(34, 34, 34);
 	padding: 10px 20px;
 	display: block;
 	color: #fff;
@@ -744,8 +744,9 @@ Version:1.0
 .header.shop.v3 .middle-inner {
 	border:none;
 }
+/* couleur de bar de menu*/
 .header.shop .header-inner {
-	background: #333;
+	background: rgb(112, 141, 35);
 }
 .header.shop.v3 .header-inner {
 	background: transparent;
@@ -892,7 +893,7 @@ Version:1.0
 	font-size: 14px;
 }
 .header.shop .main-category li .mega-menu .single-menu .title-link:hover{
-	background:#333;
+	background:rgb(51, 51, 51);
 	color:#fff;
 }
 .header.shop .main-category li .mega-menu .single-menu .inner-link{

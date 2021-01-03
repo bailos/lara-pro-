@@ -9,8 +9,8 @@
          </div>
      </div>
     <div class="card-header py-3">
-      <h6 class="m-0 font-weight-bold text-primary float-left">Brand List</h6>
-      <a href="{{route('brand.create')}}" class="btn btn-primary btn-sm float-right" data-toggle="tooltip" data-placement="bottom" title="Add User"><i class="fas fa-plus"></i> Add Brand</a>
+      <h6 class="m-0 font-weight-bold text-primary float-left">liste des marques</h6>
+      <a href="{{route('brand.create')}}" class="btn btn-primary btn-sm float-right" data-toggle="tooltip" data-placement="bottom" title="Add User"><i class="fas fa-plus"></i> Ajouter une marque</a>
     </div>
     <div class="card-body">
       <div class="table-responsive">
@@ -19,7 +19,7 @@
           <thead>
             <tr>
               <th>S.N.</th>
-              <th>Title</th>
+              <th>Titre</th>
               <th>Slug</th>
               <th>Status</th>
               <th>Action</th>
@@ -28,7 +28,7 @@
           <tfoot>
             <tr>
               <th>S.N.</th>
-              <th>Title</th>
+              <th>Titre</th>
               <th>Slug</th>
               <th>Status</th>
               <th>Action</th>
@@ -69,7 +69,7 @@
                               <form method="post" action="{{ route('banners.destroy',$user->id) }}">
                                 @csrf 
                                 @method('delete')
-                                <button type="submit" class="btn btn-danger" style="margin:auto; text-align:center">Parmanent delete user</button>
+                                <button type="submit" class="btn btn-danger" style="margin:auto; text-align:center">Suprimé permanament un utilisateur</button>
                               </form>
                             </div>
                           </div>
@@ -81,7 +81,7 @@
         </table>
         <span style="float:right">{{$brands->links()}}</span>
         @else
-          <h6 class="text-center">No brands found!!! Please create brand</h6>
+          <h6 class="text-center">Aucune marque trouver!!! veillez creer une marque</h6>
         @endif
       </div>
     </div>

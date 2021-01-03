@@ -9,8 +9,8 @@
          </div>
      </div>
     <div class="card-header py-3">
-      <h6 class="m-0 font-weight-bold text-primary float-left">Shipping List</h6>
-      <a href="{{route('shipping.create')}}" class="btn btn-primary btn-sm float-right" data-toggle="tooltip" data-placement="bottom" title="Add User"><i class="fas fa-plus"></i> Add Shipping</a>
+      <h6 class="m-0 font-weight-bold text-primary float-left">Liste des expeditions</h6>
+      <a href="{{route('shipping.create')}}" class="btn btn-primary btn-sm float-right" data-toggle="tooltip" data-placement="bottom" title="Add User"><i class="fas fa-plus"></i> Ajouter une expedition</a>
     </div>
     <div class="card-body">
       <div class="table-responsive">
@@ -19,18 +19,18 @@
           <thead>
             <tr>
               <th>S.N.</th>
-              <th>Title</th>
-              <th>Price</th>
-              <th>Status</th>
+              <th>Titre</th>
+              <th>Prix</th>
+              <th>Statut</th>
               <th>Action</th>
             </tr>
           </thead>
           <tfoot>
             <tr>
               <th>S.N.</th>
-              <th>Title</th>
-              <th>Price</th>
-              <th>Status</th>
+              <th>Titre</th>
+              <th>Prix</th>
+              <th>Statut</th>
               <th>Action</th>
               </tr>
           </tfoot>
@@ -60,7 +60,7 @@
                         <div class="modal-dialog" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h5 class="modal-title" id="#delModal{{$user->id}}Label">Delete user</h5>
+                              <h5 class="modal-title" id="#delModal{{$user->id}}Label">Suprimé un utilisateur</h5>
                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
@@ -69,7 +69,7 @@
                               <form method="post" action="{{ route('banners.destroy',$user->id) }}">
                                 @csrf 
                                 @method('delete')
-                                <button type="submit" class="btn btn-danger" style="margin:auto; text-align:center">Parmanent delete user</button>
+                                <button type="submit" class="btn btn-danger" style="margin:auto; text-align:center">Suprimé permanament un utilisateur</button>
                               </form>
                             </div>
                           </div>
@@ -81,7 +81,7 @@
         </table>
         <span style="float:right">{{$shippings->links()}}</span>
         @else
-          <h6 class="text-center">No shippings found!!! Please create shipping</h6>
+          <h6 class="text-center">Aucune expedition trouver!!! Veillez creer une expedition</h6>
         @endif
       </div>
     </div>

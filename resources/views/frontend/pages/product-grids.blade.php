@@ -10,8 +10,8 @@
                 <div class="col-12">
                     <div class="bread-inner">
                         <ul class="bread-list">
-                            <li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
-                            <li class="active"><a href="blog-single.html">Shop Grid</a></li>
+                            <li><a href="index1.html">Acceuil<i class="ti-arrow-right"></i></a></li>
+                            <li class="active"><a href="blog-single.html">Grille des magasins</a></li>
                         </ul>
                     </div>
                 </div>
@@ -63,7 +63,7 @@
                                 <!--/ End Single Widget -->
                                 <!-- Shop By Price -->
                                     <div class="single-widget range">
-                                        <h3 class="title">Shop by Price</h3>
+                                        <h3 class="title">Acheter par prix</h3>
                                         <div class="price-filter">
                                             <div class="price-filter-inner">
                                                 @php
@@ -74,7 +74,7 @@
                                                 <div class="product_filter">
                                                 <button type="submit" class="filter_button">Filter</button>
                                                 <div class="label-input">
-                                                    <span>Range:</span>
+                                                    <span>Gamme:</span>
                                                     <input style="" type="text" id="amount" readonly/>
                                                     <input type="hidden" name="price_range" id="price_range" value="@if(!empty($_GET['price'])){{$_GET['price']}}@endif"/>
                                                 </div>
@@ -122,7 +122,7 @@
                                 <!--/ End Single Widget -->
                                 <!-- Single Widget -->
                                 <div class="single-widget category">
-                                    <h3 class="title">Brands</h3>
+                                    <h3 class="title">Marque</h3>
                                     <ul class="categor-list">
                                         @php
                                             $brands=DB::table('brands')->orderBy('title','ASC')->where('status','active')->get();
@@ -328,7 +328,7 @@
                                                         </select>
                                                     </div>
                                                     {{-- <div class="col-lg-6 col-12">
-                                                        <h5 class="title">Color</h5>
+                                                        <h5 class="title">Couleur</h5>
                                                         <select>
                                                             <option selected="selected">orange</option>
                                                             <option>purple</option>
@@ -359,7 +359,7 @@
                                                     <!--/ End Input Order -->
                                                 </div>
                                                 <div class="add-to-cart">
-                                                    <button type="submit" class="btn">Add to cart</button>
+                                                    <button type="submit" class="btn">Ajouter au panier</button>
                                                     <a href="{{route('add-to-wishlist',$product->slug)}}" class="btn min"><i class="ti-heart"></i></a>
                                                 </div>
                                             </form>

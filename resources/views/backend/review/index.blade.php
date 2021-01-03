@@ -9,7 +9,7 @@
          </div>
      </div>
     <div class="card-header py-3">
-      <h6 class="m-0 font-weight-bold text-primary float-left">Review Lists</h6>
+      <h6 class="m-0 font-weight-bold text-primary float-left">Liste des revues</h6>
     </div>
     <div class="card-body">
       <div class="table-responsive">
@@ -18,9 +18,9 @@
           <thead>
             <tr>
               <th>S.N.</th>
-              <th>Review By</th>
-              <th>Product Title</th>
-              <th>Review</th>
+              <th>Revue par</th>
+              <th><Tarea>itre du produit</Tarea></th>
+              <th>Revue</th>
               <th>Rate</th>
               <th>Date</th>
               <th>Status</th>
@@ -31,8 +31,8 @@
             <tr>
               <th>S.N.</th>
               <th>Review By</th>
-              <th>Product Title</th>
-              <th>Review</th>
+              <th>Titre du produit</th>
+              <th>Revue</th>
               <th>Rate</th>
               <th>Date</th>
               <th>Status</th>
@@ -82,7 +82,7 @@
         </table>
         <span style="float:right">{{$reviews->links()}}</span>
         @else
-          <h6 class="text-center">No reviews found!!!</h6>
+          <h6 class="text-center">Aucune revue trouver!!!</h6>
         @endif
       </div>
     </div>

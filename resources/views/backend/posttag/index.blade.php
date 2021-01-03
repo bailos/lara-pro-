@@ -9,8 +9,8 @@
          </div>
      </div>
     <div class="card-header py-3">
-      <h6 class="m-0 font-weight-bold text-primary float-left">Post Tag Lists</h6>
-      <a href="{{route('post-tag.create')}}" class="btn btn-primary btn-sm float-right" data-toggle="tooltip" data-placement="bottom" title="Add User"><i class="fas fa-plus"></i> Add Post Tag</a>
+      <h6 class="m-0 font-weight-bold text-primary float-left">Liste des postes tags</h6>
+      <a href="{{route('post-tag.create')}}" class="btn btn-primary btn-sm float-right" data-toggle="tooltip" data-placement="bottom" title="Add User"><i class="fas fa-plus"></i> Ajouter un poste tag</a>
     </div>
     <div class="card-body">
       <div class="table-responsive">
@@ -19,7 +19,7 @@
           <thead>
             <tr>
               <th>S.N.</th>
-              <th>Title</th>
+              <th>Titre</th>
               <th>Slug</th>
               <th>Status</th>
               <th>Action</th>
@@ -28,7 +28,7 @@
           <tfoot>
             <tr>
               <th>S.N.</th>
-              <th>Title</th>
+              <th>Titre</th>
               <th>Slug</th>
               <th>Status</th>
               <th>Action</th>
@@ -61,7 +61,7 @@
         </table>
         <span style="float:right">{{$postTags->links()}}</span>
         @else
-          <h6 class="text-center">No Post Tag found!!! Please create post tag</h6>
+          <h6 class="text-center">Aucun tag trouver!!! veillez créer un poste de tag</h6>
         @endif
       </div>
     </div>

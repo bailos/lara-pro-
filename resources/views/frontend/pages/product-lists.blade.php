@@ -11,8 +11,8 @@
 					<div class="col-12">
 						<div class="bread-inner">
 							<ul class="bread-list">
-								<li><a href="{{route('home')}}">Home<i class="ti-arrow-right"></i></a></li>
-								<li class="active"><a href="javascript:void(0);">Shop List</a></li>
+								<li><a href="{{route('home')}}">Acceuil<i class="ti-arrow-right"></i></a></li>
+								<li class="active"><a href="javascript:void(0);">liste des boutiques</a></li>
 							</ul>
 						</div>
 					</div>
@@ -195,11 +195,11 @@
 															</a>
 															<div class="button-head">
 																<div class="product-action">
-																	<a data-toggle="modal" data-target="#{{$product->id}}" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-																	<a title="Wishlist" href="{{route('add-to-wishlist',$product->slug)}}" class="wishlist" data-id="{{$product->id}}"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+																	<a data-toggle="modal" data-target="#{{$product->id}}" title="Quick View" href="#"><i class=" ti-eye"></i><span>Boutique rapide</span></a>
+																	<a title="Wishlist" href="{{route('add-to-wishlist',$product->slug)}}" class="wishlist" data-id="{{$product->id}}"><i class=" ti-heart "></i><span>Ajouter aux souhaits</span></a>
 																</div>
 																<div class="product-action-2">
-																	<a title="Add to cart" href="{{route('add-to-cart',$product->slug)}}">Add to cart</a>
+																	<a title="Add to cart" href="{{route('add-to-cart',$product->slug)}}">Ajouter au panier</a>
 																</div>
 															</div>
 														</div>
@@ -219,7 +219,7 @@
 														{{-- <p>{!! html_entity_decode($product->summary) !!}</p> --}}
 														</div>
 														<p class="des pt-2">{!! html_entity_decode($product->summary) !!}</p>
-														<a href="javascript:void(0)" class="btn cart" data-id="{{$product->id}}">Buy Now!</a>
+														<a href="javascript:void(0)" class="btn cart" data-id="{{$product->id}}">payer maintenant!</a>
 													</div>
 												</div>
 											</div>
@@ -227,7 +227,7 @@
 										<!-- End Single List -->
 									@endforeach
 								@else
-									<h4 class="text-warning" style="margin:100px auto;">There are no products.</h4>
+									<h4 class="text-warning" style="margin:100px auto;">Il y'a pas de produit.</h4>
 								@endif
 							</div>
 							 <div class="row">

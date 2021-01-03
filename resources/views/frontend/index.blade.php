@@ -13,10 +13,10 @@
                         <div class="row">
                             <div class="col-lg-7 col-12">
                                 <div class="hero-text">
-                                    <h1><span>UP TO 50% OFF </span>Shirt For Man</h1>
+                                    <h1><span>Jusqu'a 50 de reduction </span>Chemise pour homme</h1>
                                     <p>Maboriosam in a nesciung eget magnae <br> dapibus disting tloctio in the find it pereri <br> odiy maboriosm.</p>
                                     <div class="button">
-                                        <a href="#" class="btn">Shop Now!</a>
+                                        <a href="#" class="btn">Acheter maintenant!</a>
                                     </div>
                                 </div>
                             </div>
@@ -43,18 +43,18 @@
                     <div class="carousel-caption d-none d-md-block text-left">
                         <h1 class="wow fadeInDown">{{$banner->title}}</h1>
                         <p>{!! html_entity_decode($banner->description) !!}</p>
-                        <a class="btn btn-lg ws-btn wow fadeInUpBig" href="{{route('product-grids')}}" role="button">Shop Now<i class="far fa-arrow-alt-circle-right"></i></i></a>
+                        <a class="btn btn-lg ws-btn wow fadeInUpBig" href="{{route('product-grids')}}" role="button">Acheter maintenant<i class="far fa-arrow-alt-circle-right"></i></i></a>
                     </div>
                 </div>  
             @endforeach   
         </div>
         <a class="carousel-control-prev" href="#Gslider" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
+        <span class="sr-only">Precedent</span>
         </a>
         <a class="carousel-control-next" href="#Gslider" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
+        <span class="sr-only">Suivant</span>
         </a>
     </section>
 @endif
@@ -81,7 +81,7 @@
                                 @endif
                                 <div class="content">
                                     <h3>{{$cat->title}}</h3>
-                                        <a href="{{route('product-cat',$cat->slug)}}">Discover Now</a>
+                                        <a href="{{route('product-cat',$cat->slug)}}">Decouvrer maintenant</a>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +100,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
-                        <h2>Trending Item</h2>
+                        <h2>Point de tendance</h2>
                     </div>
                 </div>
             </div>
@@ -156,11 +156,11 @@
                                             </a>
                                             <div class="button-head">
                                                 <div class="product-action">
-                                                    <a data-toggle="modal" data-target="#{{$product->id}}" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                                    <a title="Wishlist" href="{{route('add-to-wishlist',$product->slug)}}" ><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                                    <a data-toggle="modal" data-target="#{{$product->id}}" title="Quick View" href="#"><i class=" ti-eye"></i><span>Acheter rapidement</span></a>
+                                                    <a title="Wishlist" href="{{route('add-to-wishlist',$product->slug)}}" ><i class=" ti-heart "></i><span>Ajouter aux souhaits</span></a>
                                                 </div>
                                                 <div class="product-action-2">
-                                                    <a title="Add to cart" href="{{route('add-to-cart',$product->slug)}}">Add to cart</a>
+                                                    <a title="Add to cart" href="{{route('add-to-cart',$product->slug)}}">Ajouter au panier</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -209,7 +209,7 @@
                             <div class="content">
                                 <p>{{$data->cat_info['title']}}</p>
                                 <h3>{{$data->title}} <br>Up to<span> {{$data->discount}}%</span></h3>
-                                <a href="{{route('product-detail',$data->slug)}}">Shop Now</a>
+                                <a href="{{route('product-detail',$data->slug)}}">Acheter maintenant</a>
                             </div>
                         </div>
                     </div>
@@ -227,7 +227,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-title">
-                    <h2>Hot Item</h2>
+                    <h2>point chaud</h2>
                 </div>
             </div>
         </div>
@@ -250,11 +250,11 @@
                                 </a>
                                 <div class="button-head">
                                     <div class="product-action">
-                                        <a data-toggle="modal" data-target="#{{$product->id}}" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                        <a title="Wishlist" href="{{route('add-to-wishlist',$product->slug)}}" ><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+                                        <a data-toggle="modal" data-target="#{{$product->id}}" title="Quick View" href="#"><i class=" ti-eye"></i><span>Acheter rapidement</span></a>
+                                        <a title="Wishlist" href="{{route('add-to-wishlist',$product->slug)}}" ><i class=" ti-heart "></i><span>Ajouter aux souhaits</span></a>
                                     </div>
                                     <div class="product-action-2">
-                                        <a href="{{route('add-to-cart',$product->slug)}}">Add to cart</a>
+                                        <a href="{{route('add-to-cart',$product->slug)}}">Ajouter au panier</a>
                                     </div>
                                 </div>
                             </div>
@@ -287,7 +287,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="shop-section-title">
-                            <h1>Latest Items</h1>
+                            <h1>Dernier article</h1>
                         </div>
                     </div>
                 </div>
@@ -346,7 +346,7 @@
                     <div class="col-lg-6 col-12 padding-left">
                         <div class="content">
                             <div class="heading-block">
-                                <p class="small-title">Deal of day</p>
+                                <p class="small-title">Marché du jour</p>
                                 <h3 class="title">{{$data->title}}</h3>
                                 <p class="text">{!! html_entity_decode($data->summary) !!}</p>
                                 @php 
@@ -371,7 +371,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-title">
-                    <h2>From Our Blog</h2>
+                    <h2>Depuis notre blog</h2>
                 </div>
             </div>
         </div>
@@ -406,8 +406,8 @@
                 <!-- Start Single Service -->
                 <div class="single-service">
                     <i class="ti-rocket"></i>
-                    <h4>Free shiping</h4>
-                    <p>Orders over $100</p>
+                    <h4>livraison gratuite</h4>
+                    <p>commande superieur à 100 000</p>
                 </div>
                 <!-- End Single Service -->
             </div>
@@ -415,8 +415,8 @@
                 <!-- Start Single Service -->
                 <div class="single-service">
                     <i class="ti-reload"></i>
-                    <h4>Free Return</h4>
-                    <p>Within 30 days returns</p>
+                    <h4>Retour gratuit</h4>
+                    <p>dans un delais de 30 jours</p>
                 </div>
                 <!-- End Single Service -->
             </div>
@@ -424,8 +424,8 @@
                 <!-- Start Single Service -->
                 <div class="single-service">
                     <i class="ti-lock"></i>
-                    <h4>Sucure Payment</h4>
-                    <p>100% secure payment</p>
+                    <h4>Paiement securisé</h4>
+                    <p>100% securité</p>
                 </div>
                 <!-- End Single Service -->
             </div>
@@ -433,8 +433,8 @@
                 <!-- Start Single Service -->
                 <div class="single-service">
                     <i class="ti-tag"></i>
-                    <h4>Best Peice</h4>
-                    <p>Guaranteed price</p>
+                    <h4>Meuilleur prix</h4>
+                    <p>prix ganranti</p>
                 </div>
                 <!-- End Single Service -->
             </div>
@@ -561,7 +561,7 @@
                                                 <!--/ End Input Order -->
                                             </div>
                                             <div class="add-to-cart">
-                                                <button type="submit" class="btn">Add to cart</button>
+                                                <button type="submit" class="btn">Ajouter au panier</button>
                                                 <a href="{{route('add-to-wishlist',$product->slug)}}" class="btn min"><i class="ti-heart"></i></a>
                                             </div>
                                         </form>

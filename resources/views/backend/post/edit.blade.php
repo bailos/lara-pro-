@@ -3,13 +3,13 @@
 @section('main-content')
 
 <div class="card">
-    <h5 class="card-header">Edit Post</h5>
+    <h5 class="card-header">Edité un poste</h5>
     <div class="card-body">
       <form method="post" action="{{route('post.update',$post->id)}}">
         @csrf 
         @method('PATCH')
         <div class="form-group">
-          <label for="inputTitle" class="col-form-label">Title <span class="text-danger">*</span></label>
+          <label for="inputTitle" class="col-form-label">Titre <span class="text-danger">*</span></label>
           <input id="inputTitle" type="text" name="title" placeholder="Enter title"  value="{{$post->title}}" class="form-control">
           @error('title')
           <span class="text-danger">{{$message}}</span>
@@ -41,7 +41,7 @@
         </div>
 
         <div class="form-group">
-          <label for="post_cat_id">Category <span class="text-danger">*</span></label>
+          <label for="post_cat_id">Categorie <span class="text-danger">*</span></label>
           <select name="post_cat_id" class="form-control">
               <option value="">--Select any category--</option>
               @foreach($categories as $key=>$data)
@@ -65,7 +65,7 @@
           </select>
         </div>
         <div class="form-group">
-          <label for="added_by">Author</label>
+          <label for="added_by">Auteur</label>
           <select name="added_by" class="form-control">
               <option value="">--Select any one--</option>
               @foreach($users as $key=>$data)
@@ -78,7 +78,7 @@
           <div class="input-group">
               <span class="input-group-btn">
                   <a id="lfm" data-input="thumbnail" data-preview="holder" class="btn btn-primary">
-                  <i class="fa fa-picture-o"></i> Choose
+                  <i class="fa fa-picture-o"></i> Choisir
                   </a>
               </span>
           <input id="thumbnail" class="form-control" type="text" name="photo" value="{{$post->photo}}">
@@ -101,7 +101,7 @@
           @enderror
         </div>
         <div class="form-group mb-3">
-           <button class="btn btn-success" type="submit">Update</button>
+           <button class="btn btn-success" type="submit">Mis à jour</button>
         </div>
       </form>
     </div>
